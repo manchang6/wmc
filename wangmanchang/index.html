@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/swiper.min.css">
+     
+</head>
+
+<body onload="loaded()">
+    <div class="container">
+        <div class="header">
+            <span class="header-left"><img src="img/left.png" alt="">返回</span>
+            <h1>在线选座影院</h1>
+            <span class="header-right"><img src="img/dian.png" alt=""></span>
+        </div>
+        <div class="search">
+            <div class="search-left">
+                北京<img src="img/xia.png" alt="">
+            </div>
+            <div class="search-center">
+                <img src="img/seach.png" alt="">
+                <input type="text" placeholder="找影院">
+            </div>
+            <div class="search-right">
+                <img src="img/1.png" alt=""> 筛选
+            </div>
+        </div>
+        <div class="swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+                <li class="swiper-slide"><img src="img/pic1.png"></li>
+            </ul>
+        </div>
+        <div id="wrapper">
+            <div class="scroller">
+                
+            </div>
+        </div>
+
+        <div id="footer">
+            <dl>
+                <dd><img src="img/move.png"></dd>
+                <dt>电影</dt>
+            </dl>
+            <dl>
+                <dd class="dd"><img src="img/musr.png"></dd>
+                <dt>演出</dt>
+            </dl>
+            <dl>
+                <dd class="dd"><img src="img/key.png"></dd>
+                <dt>赛事</dt>
+            </dl>
+            <dl>
+                <dd><img src="img/diuqiu.png"></dd>
+                <dt>发现</dt>
+            </dl>
+            <dl>
+                <dd><img src="img/ren'.png"></dd>
+                <dt>我的</dt>
+            </dl>
+        </div>
+        <!-- <div class="appCity">
+            <div class="city-left">
+                <p>区域</p>
+                <p class="selCity-On">品牌</p>
+            </div>
+            <div class="city-right">
+                <p class="city-all">全部</p>
+                <ul>
+                     <li>
+                         <p class="region-list">朝阳区<span>(42家)</span></p>
+                         <ul class="ui-cityList">
+                             <li>朝阳区1</li>
+                             <li>朝阳区1</li>
+                         </ul>
+                     </li>
+                      <li class="selUi-on">
+                         <p class="region-list">朝阳区<span>(42家)</span></p>
+                         <ul class="ui-cityList">
+                             <li>朝阳区1</li>
+                             <li>朝阳区1</li>0.6
+                         </ul>
+                     </li>
+                </ul>
+            </div>
+        </div> --> 
+        <div class="selCity">
+            <div class="selC-head">
+                <h1>更换城市<span class="close">×</span></h1>
+            </div>
+            <div class="selC-search">
+                <div class="selC-wrap">
+                    <img src="img/seach.png" alt="">
+                    <input type="text" placeholder="找影院">
+                </div>
+            </div>
+            <div class="selC-pos">
+                <span class="pos-big">北京</span>
+                <span class="pos-small">当前定位城市</span>
+            </div>
+            <div class="selC-hot">
+                <h2 class="selC-listHead">热门</h2>
+                <ul class="selC-listWrap">
+                    <li>北京</li> <li>北京</li> <li>北京</li> <li>北京</li> <li>北京</li> <li>北京</li> <li>北京</li>
+                </ul>
+            </div>
+            <div class="selC-list">
+                
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="lib/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded() {
+            myScroll = new IScroll('#wrapper', {
+                bounceEasing: 'elastic',
+                bounceTime: 1200
+            });
+        }
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, false);
+    </script>
+    <script src="lib/require.js" defer anysc="true" data-main="js/requireHome.js"></script>
+</body>
+
+</html>
